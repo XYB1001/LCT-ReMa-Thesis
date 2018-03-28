@@ -1,11 +1,11 @@
 # LCT-ReMa-Thesis
-**Automatic Classification of English Learner Texts to CEFR Proficiency Levels Using E-Learning and Social Media Data**  
+**Working Title: Automatic Classification of English Learner Texts to CEFR Proficiency Levels Using E-Learning and Social Media Data**  
 
 Author: Xiaoyu Bai  
 1st Supervisor: Dr. Malvina Nissim  
 2nd Supervisor: Dr. Albert Gatt  
 
-*Abstract*  
+*Working Abstract*  
 
 
 The present project addresses the automatic classification of textual data produced by ESL (English as a Second Language) learners to their proficiency levels in English. In particular, we use the widely accepted CEFR (Common European Framework of Reference for Languages) levels, which makes the task under discussion a six-class text classification problem.  
