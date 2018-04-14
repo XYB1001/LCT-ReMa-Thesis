@@ -21,21 +21,16 @@ dlRECT00R	c2
 Baleinho	c1
 EdLaur	c1
 twerk4monstax	c1
-chlewey	c2
 opheliaced	c2
 RolfHut	c2
 LauraaSelinaax	c2
 BousfHearts	c2
 mareiersalade	c1
-Stell_Estela	c2
 SchlagerKaty	c2
 DSew	c2
-violetlrisla	c2
 principalina1	c2
-mysticdoni	c2
 iisaKadriu	c2
 voelvry1993	c2
-lipasflo	c2
 bluxbaerry	c1
 JustLikeLaure	c1
 _beeuby	c1
@@ -66,7 +61,7 @@ dolanwhydontwe_	c1
 sessissimo	c1
 CZTLucas99	c1
 xHimedere	c1
-Lu_Honeychurch	c1	note:self_reports_worse
+Lu_Honeychurch	c1
 smughusbands	c1
 dailybettikah	b2
 drwch	c1
@@ -84,9 +79,7 @@ madmiraclecloud	c1
 Zalagath	c1
 jungjoony	c1
 00hallelujah	c1
-Hoosaidiloveyou	b1
 SrVaca__	c1
-mareiersalade	c1
 jiminielgbt	c1
 diorpills	c1
 Calin_Mihail	c1
@@ -96,12 +89,10 @@ jeonghanie	c1
 slicedgingerbrd	c1
 eMarketMexico	c1
 _reyesventura	c1
-MyWinterSnow	c1
 JustMirie	c1
 arden_lucy	b2
 smolcece	c1
 TechCSGO_Insta	c1
-mundobbicolor	c1
 craneswordboi	b2
 loonapiena	b2
 GOTTAGODOLAN	b2
@@ -117,7 +108,6 @@ TayBay1144	b2
 moonzxmoon	b2
 Ilovemysmilerz	b1
 Hichochar	b2
-_ikiteiru	b2
 shanesthiccnecc	b2
 DaniielaaS	b2
 yusufilkrtsci	b2
@@ -125,13 +115,11 @@ AlgitaLfc	c2
 Dragavnir	b2
 _alessandrosola	c1
 bjootwt	a2
-AlexStraits	b2
 RadoslavTsanev	b2
 boringanddumb	b2
 katyabatischeva	c2
 edawnsdxck	b2
 tuanesapek	b2
-dolanwhydontwe_	c1
 FragilexDesires	c2
 anuhhstasia	b2
 quitjungkook	b2
@@ -162,6 +150,5 @@ rinousagi	a2
 poornotsavage	a2
 Sphinkster	c1
 MotoBadnik	a2
-xChiraii	c2
 taylorrkeltonn	a1
 07Kiana	a1
