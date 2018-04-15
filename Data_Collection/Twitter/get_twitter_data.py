@@ -32,10 +32,10 @@ def get_labeled_user_tweets(API, user, label, error_file):
 
 ##########################################################################################
 
-error_log = 'user_errors.log'
+error_log = './14.04.2018/user_errors.log'
 
 # Getting list of users
-with open('users_labels.txt', 'r', encoding='utf-8') as fi:
+with open('all_twitter_users.txt', 'r', encoding='utf-8') as fi:
     users = []
     for line in fi:
         # ignore possible empty lines
@@ -52,24 +52,40 @@ print(len(users), 'users')
 f_error = open(error_log, 'w')
 f_error.close()
 
+# Extracting ids of tweets we already have
+load_orig = open('./07.04.2018/data-twitter-07.04.pickle', 'rb')
+data_07Apr = pickle.load(load_orig)
+load_orig.close()
+
+current_tweets = {tup[1] for tup in data_07Apr}
+print(type(current_tweets))
+print('%d unique tweets so far' % len(current_tweets))
+
+
 data = []
-with open('count_file.txt', 'w', encoding='utf-8') as fo:
+with open('./14.04.2018/count_file.txt', 'w', encoding='utf-8') as fo:
+    count_duplicate_tweets = 0
     count_user = 1
     for user in users:
         print('Working on user', count_user)
         count = 0
         for tw_data in get_labeled_user_tweets(api, user[0], user[1], error_log):
-            data.append(tw_data)
-            count += 1
+            # making sure it is not a tweet we already have in our dataset
+            if tw_data[1] not in current_tweets:
+                data.append(tw_data)
+                count += 1
+            else:
+                count_duplicate_tweets += 1
         fo.write(str(user) + '\t' + str(count) + '\n')
         count_user += 1
 
 
 print('Done')
 print('Tweets found:', len(data))
+print('Prevented addition of %d duplicate tweets' % count_duplicate_tweets)
 
 # Pickle currently saved data
-save_file = open('data-07.04.pickle', 'wb')
+save_file = open('./14.04.2018/data-twitter-14.04.pickle', 'wb')
 pickle.dump(data, save_file)
 save_file.close()
 
