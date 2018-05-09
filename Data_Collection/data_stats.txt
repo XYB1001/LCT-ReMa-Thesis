@@ -1,0 +1,39 @@
+########### SM CORPUS #####################################
+
+len(data): 119890
+len(labels): 119890
+c2	34882
+c1	56109
+b1	11289
+b2	15363
+a2	1312
+a1	935
+
+Average lengths in number of tokens
+(tokenized using nltk.tokenize method word_tokenize)
+
+Twitter data
+Mean length: 17.696326333664295
+St. deviation: 14.066941685739245
+Reddit data
+Mean length: 41.69471252990184
+St. deviation: 74.33681998667393
+
+Overall lengths:
+Mean length: 20.122987738760532
+St. deviation: 28.088227194274204
+
+########## EFCAMDAT #########################################
+
+len(efdat): 28029
+len(ef_labels): 28029
+a1	6000
+b1	6000
+a2	6000
+b2	5650
+c1	3749
+c2	630
+Efcamdat data
+Mean length: 114.58853330479147
+St. deviation: 63.27735345787127
+
