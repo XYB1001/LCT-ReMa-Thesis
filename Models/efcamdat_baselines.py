@@ -1,5 +1,5 @@
 '''
-Baseline systems for proficiency prediction on SM data
+Baseline systems for proficiency prediction on EF data
 1) Most freq. class (MFC)
 2) Unweighted word unigram + char ngram (3,6) linear SVM
 '''
@@ -31,12 +31,12 @@ def shuffle_prepare_data(data, clean_char=True):
     np.random.shuffle(data)
 
     if clean_char:
-        samples = [ strip_emoticons(strip_cl_chars(tup[0])) for tup in data ]
+        samples = [ strip_cl_chars(tup[0]) for tup in data ]
     else:
         samples = [ tup[0] for tup in data]
 
     # samples = [ tup[0] for tup in data]
-    labels = [ tup[2] for tup in data]
+    labels = [ tup[1] for tup in data]
 
     return samples, labels
 
@@ -78,20 +78,13 @@ if __name__ == '__main__':
     # args = parser.parse_args()
 
     print('Fetching and preparing data...')
-    # Fetching pickled data
-    tw_path = '../Data/twitter-data.pickle'
-    red_path = '../Data/reddit-data.pickle'
-
-    ftw = open(tw_path,'rb')
-    twitter = pickle.load(ftw)
-    ftw.close()
-    fred = open(red_path,'rb')
-    reddit = pickle.load(fred)
-    fred.close()
+    # Fetching pickled ef data
+    f = open('../Data/efcamdat-data.pickle', 'rb')
+    data = pickle.load(f)
+    f.close()
 
     # Preparing + shuffling data
-    full_data = twitter + reddit
-    X, Y = shuffle_prepare_data(full_data)
+    X, Y = shuffle_prepare_data(data)
     # X = X[:2000]
     # Y = Y[:2000]
     print('len(X):', len(X))
