@@ -19,6 +19,7 @@ def strip_cl_chars(text):
     newtext = ''.join([char for char in text if unicodedata.category(char)[0]!='C'])
     return newtext
 
+
 if __name__ == '__main__':
     f1 = open('reddit-data.pickle', 'rb')
     data = pickle.load(f1)
