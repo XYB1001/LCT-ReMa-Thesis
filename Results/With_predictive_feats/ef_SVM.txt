@@ -1,0 +1,43 @@
+EFCAM ON EFCAM
+
+LinearSVC
+word uni + char(3,6)
+
+**************************************************
+Results for SVM model:
+--------------------------------------------------
+Accuracy: 0.9262950515702862
+--------------------------------------------------
+Precision, recall and F-score per class:
+            Precision     Recall    F-score
+a1           0.954699   0.971783   0.963165
+a2           0.936067   0.922603   0.929286
+b1           0.916390   0.889820   0.902909
+b2           0.927994   0.893211   0.910270
+c1           0.910454   0.958209   0.933721
+c2           0.914667   0.846914   0.879487
+--------------------------------------------------
+Average (macro) F-score: 0.9198065174709714
+--------------------------------------------------
+Confusion matrix:
+Labels: ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']
+[[1412    9    6    8   17    1]
+ [  43 1347   35    7   27    1]
+ [  11   45 1381   49   57    9]
+ [   7   16   46 1263   77    5]
+ [   6   16   34   26 2247   16]
+ [   0    6    5    8   43  343]]
+
+**************************************************
+
+6 classes
+1269525 features
+------------------------------
+Top 10 predictive features by class:
+a1:	char__'m  word__hi char__ hi char__ in my char__i'm char__i'm  char__ in m char__go  char__ work  char__ in
+a2:	char__ien  char__ rie char__rien  char__ leter char__r rien char__ rien char__ rien  char__leter char__ lete char__leter 
+b1:	char__ u  char__t a te char__ u c char__ u ca char__ u can char__et a t char__t a t char__t an  char__t an e char__a mom
+b2:	char__ortly  char__rtly  char__adam,  char__dam,  char__tly  char__am,  char__m,  char__ly  char__ary i char__ary is
+c1:	char__n my w char__tly char__fter.  char__w. i p char__ i pro char__. i p char__my wor char__now. i char__ow. i  char__. i pr
+c2:	char__obot char__obo char__robo char__robot char__ robo char__ robot char__t n char__rit char__ rob char__ ro
+
