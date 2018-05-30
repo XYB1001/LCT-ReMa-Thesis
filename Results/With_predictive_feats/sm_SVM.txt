@@ -40,3 +40,91 @@ b2:	word__oc word__yo char__ what? word__non char__ the p word__bof char__yop ch
 c1:	char__¦¦  char__||  char__f god  char__u too! char__best < char__ough  char__that?  char__yy tha char__ao tha char__ what.
 c2:	word__tf char__gh i c char__l so b char__orst o char__lcome. char__yo. char__o too. char__at tod char__ding l char__! ❤
 
+
+Twitter on Twitter
+
+LinearSVC
+word uni + char(3,6)
+
+**************************************************
+Results for SVM model:
+--------------------------------------------------
+Accuracy: 0.5866305396778264
+--------------------------------------------------
+Precision, recall and F-score per class:
+            Precision     Recall    F-score
+a1           0.634483   0.422018   0.506887
+a2           0.209459   0.105802   0.140590
+b1           0.480777   0.470566   0.475617
+b2           0.434768   0.418212   0.426329
+c1           0.652738   0.681256   0.666692
+c2           0.572846   0.561067   0.566895
+--------------------------------------------------
+Average (macro) F-score: 0.4638350248528372
+--------------------------------------------------
+Confusion matrix:
+Labels: ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']
+[[  92    0    7   13   66   40]
+ [   0   31   41   22  139   60]
+ [   2   13 1263  199  811  396]
+ [   6   16  210 1263 1010  515]
+ [  28   51  715  909 8654 2346]
+ [  17   37  391  499 2578 4502]]
+
+**************************************************
+6 classes
+1608106 features
+------------------------------
+Top 10 predictive features by class:
+a1:	char__s emo  word__fr char__orrow  char__rrow  char__row  char__acts e char__cts em char__cts e char__late e char__h emo 
+a2:	char__of* char__yo 1 char__o 1 word__feas char__t me e char__feas word__of word__why char__fea word__bac
+b1:	char__yo* word__boa word__te char__non.  char__sting  char__y wtf  char__bon. char__ying e word__or char__boa
+b2:	word__oc word__yo char__u emo❤ char__*of word__non char__ ^^ char__ the p word__eat char__u omg  word__bea
+c1:	char__¦¦  char__||  char__ for n char__f god  char__? emo  char__u too! char__e you. char__best e char__'m sor char__d of u
+c2:	char__on* word__cj char__o emo( char__l so b char__u you  char__rning  char__y too! char__yo. char__rsed e char__ming i
+
+
+Reddit on Reddit
+
+LinearSVC
+word uni + char(3,6)
+
+**************************************************
+Results for SVM model:
+--------------------------------------------------
+Accuracy: 0.5311778290993071
+--------------------------------------------------
+Precision, recall and F-score per class:
+/home/xiaoyu/anaconda3/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+            Precision     Recall    F-score
+a1           0.000000   0.000000   0.000000
+a2           1.000000   0.147059   0.256410
+b1           0.441558   0.375691   0.405970
+b2           0.485607   0.500645   0.493011
+c1           0.595322   0.635401   0.614709
+c2           0.466767   0.433989   0.449782
+--------------------------------------------------
+Average (macro) F-score: 0.3699804352920146
+--------------------------------------------------
+Confusion matrix:
+Labels: ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']
+[[  0   0   1   2   3   1]
+ [  0   5   4   6  13   6]
+ [  0   0  68  39  53  21]
+ [  0   0  22 388 251 114]
+ [  0   0  42 229 840 211]
+ [  0   0  17 135 251 309]]
+
+**************************************************
+6 classes
+711912 features
+------------------------------
+Top 10 predictive features by class:
+a1:	char__ts  char__tor.. char__. who char__ho? char__.. who char__or.. w char__ctor.. char__tor..  char__who? char__ who?
+a2:	char__hell y char__hell  char__ell ye char__ll ye char__ll yea char__l yea char__l yeah word__hell char__l ye char__ell y
+b1:	char__dope  char__ dope  char__nks!! char__ks!! char__anks!! char__s!! char__ope  char__pe  char__s!!!!  char__s!!!!
+b2:	word__tbh char__tbh word__the char__thing  char__hing  char__you!! char__ you!! char__ou!! char__u!! char__the
+c1:	char__u!!  char__you!!  char__ou!!  char__e.. char__nks!!! char__ks!!! char__that?  char__ch! char__here.. char__ere..
+c2:	char__real.  char__eal.  char__e]( char__l.  char__al.  char__d]( char__actly. char__ctly. char__ice. char__t](
+

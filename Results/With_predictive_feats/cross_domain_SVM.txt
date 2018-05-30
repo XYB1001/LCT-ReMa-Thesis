@@ -1,0 +1,180 @@
+EFCAM ON SM
+
+LinearSVC
+word uni + char(3,6)
+
+**************************************************
+Results for SVM model:
+--------------------------------------------------
+Accuracy: 0.3792
+--------------------------------------------------
+Precision, recall and F-score per class:
+            Precision     Recall    F-score
+a1           0.012685   0.181818   0.023715
+a2           0.000000   0.000000   0.000000
+b1           0.075697   0.040426   0.052705
+b2           0.103704   0.023490   0.038304
+c1           0.478445   0.756904   0.586291
+c2           0.369231   0.032787   0.060226
+--------------------------------------------------
+Average (macro) F-score: 0.12687337452092814
+--------------------------------------------------
+Confusion matrix:
+Labels: ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']
+[[   6    2    1    0   23    1]
+ [   5    0    1    0   39    2]
+ [  43   23   19    5  372    8]
+ [  52   25   34   14  460   11]
+ [ 213  107  128   73 1809   60]
+ [ 154   73   68   43 1078   48]]
+
+**************************************************
+6 classes
+1438162 features
+------------------------------
+Top 10 predictive features by class:
+a1:	word__hi char__'m  char__ hi char__i'm char__ in my char__i'm  char__i a char__go  char__ sh char__y. 
+a2:	char__ien  char__ than char__ thank char__ rie char__r rien char__rien  word__rien char__ rien  char__r rie char__leter 
+b1:	char__ u  char__t a te char__ u c char__ u ca char__ u can char__et a t char__ a mom char__a mom char__t an e char__a mome
+b2:	char__ortly  char__rtly  char__adam,  char__dam,  char__tly  char__am,  char__m,  char__ly  char__ary i char__s. 
+c1:	char__bye. char__ye. word__bye char__bye char__n my w char__tly char__es. char__my wor char__my wo char__ my wo
+c2:	char__obot char__robo char__robot char__ robo char__ robot char__obo char__rit char__n i char__t n char__ rob
+
+
+
+
+
+
+
+SM ON EF
+
+LinearSVC
+word uni + char(3,6)
+
+**************************************************
+Results for SVM model:
+--------------------------------------------------
+Accuracy: 0.1794
+--------------------------------------------------
+Precision, recall and F-score per class:
+/home/xiaoyu/anaconda3/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+            Precision     Recall    F-score
+a1           0.000000   0.000000   0.000000
+a2           0.181818   0.002299   0.004540
+b1           0.174274   0.051788   0.079848
+b2           0.146580   0.112782   0.127479
+c1           0.310881   0.475162   0.375854
+c2           0.051218   0.432773   0.091596
+--------------------------------------------------
+Average (macro) F-score: 0.1132195727558638
+--------------------------------------------------
+Confusion matrix:
+Labels: ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']
+[[  0   4 105 126 384 275]
+ [  0   2  40 117 327 384]
+ [  0   0  42 111 306 352]
+ [  0   1  15  90 334 358]
+ [  0   4  35 151 660 539]
+ [  0   0   4  19 112 103]]
+
+**************************************************
+6 classes
+2244389 features
+------------------------------
+Top 10 predictive features by class:
+a1:	char__s emo  char__acts e char__row  char__cts em char__cts e char__orrow  word__fr char__rrow  char__late e char__i️ 
+a2:	char__of* char__yo 1 char__o 1 char__t me e word__feas char__ cutee char__feas word__of char__amily* char__mily*
+b1:	char__yo* char__y emo❤ word__boa word__te char__sting  char__ts!!!  char__non.  char__u too  char__ying e char__'s mea
+b2:	word__oc word__yo char__u emo❤ char__zing!! char__*of word__non char__ why? char__s so a word__eat char__u omg 
+c1:	char__¦¦  char__||  char__f god  char__best e char__? emo  char__//  char__is!!!  char__ what. char__p me p char__l me e
+c2:	char__on* word__cj char__o emo( char__gh i c char__l so b char__d it e word__tf char__u you  char__t me b char__rted.
+
+
+Twitter on Reddit
+
+LinearSVC
+word uni + char (3,6)
+
+**************************************************
+Results for SVM model:
+--------------------------------------------------
+Accuracy: 0.3342
+--------------------------------------------------
+Precision, recall and F-score per class:
+            Precision     Recall    F-score
+a1           0.000000   0.000000   0.000000
+a2           0.000000   0.000000   0.000000
+b1           0.046729   0.033898   0.039293
+b2           0.260000   0.093675   0.137728
+c1           0.440226   0.496809   0.466809
+c2           0.248359   0.374587   0.298684
+--------------------------------------------------
+Average (macro) F-score: 0.15708573975851428
+--------------------------------------------------
+Confusion matrix:
+Labels: ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']
+[[   0    0    0    0    4   10]
+ [   0    0    1    1   22   12]
+ [   0    4   10   31  134  116]
+ [   0    7   62  117  646  417]
+ [   2   13   85  185 1090  819]
+ [   1    5   56  116  580  454]]
+
+**************************************************
+6 classes
+1889051 features
+------------------------------
+Top 10 predictive features by class:
+a1:	char__s emo  char__row  char__acts e char__cts em char__cts e char__orrow  word__fr char__rrow  char__late e char__i️ 
+a2:	char__of* char__yo 1 char__o 1 char__t me e char__ cutee word__feas char__feas word__of char__mily* char__amily*
+b1:	char__yo* char__y emo❤ word__boa char__non.  word__te char__sting  char__u too  char__ying e char__y wtf  char__ts!!! 
+b2:	word__oc word__yo char__u emo❤ char__*of char__ ^^ word__non char__u omg  word__eat word__bof char__ — 
+c1:	char__¦¦  char__||  char__f god  char__best e char__? emo  char__that?  char__w me l char__//  char__u thou char__l me e
+c2:	word__cj char__on* char__d it e char__gh i c char__l so b char__o emo( char__rted. word__tf char__u you  char__t me b
+
+
+
+
+Reddit on Twitter
+
+LinearSVC
+word uni + char (3,6)
+
+**************************************************
+Results for SVM model:
+--------------------------------------------------
+Accuracy: 0.3426
+--------------------------------------------------
+Precision, recall and F-score per class:
+            Precision     Recall    F-score
+a1           0.000000   0.000000   0.000000
+a2           0.000000   0.000000   0.000000
+b1           0.054264   0.014085   0.022364
+b2           0.115137   0.252205   0.158098
+c1           0.463983   0.556544   0.506066
+c2           0.315190   0.169043   0.220062
+--------------------------------------------------
+Average (macro) F-score: 0.15109838947060703
+--------------------------------------------------
+Confusion matrix:
+Labels: ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']
+[[   0    0    0   11   23    1]
+ [   0    0    1   18   36   12]
+ [   0    1    7  108  289   92]
+ [   0    0   12  143  337   75]
+ [   0    3   61  622 1314  361]
+ [   1    2   48  340  833  249]]
+
+**************************************************
+6 classes
+840743 features
+------------------------------
+Top 10 predictive features by class:
+a1:	char__r..  char__tor..  char__. who char__. who? char__.. who char__r.. w char__r.. wh char__ctor.. char__or..  char__or.. w
+a2:	char__oo tha char__too th char__too t char__ too t char__oo th char__oo t char__o than char__e too  char__same. char__ same.
+b1:	char__ dope  char__dope  char__hy? char__why? char__ks!! char__anks!! char__nks!! char__hanks  char__ope  char__s!!
+b2:	word__tbh char__tbh word__the char__thing  char__hing  char__ou!! char__you!! char__ you!! char__u!! word__sex
+c1:	char__e.. char__you!!  char__ou!!  char__u!!  char__ch! char__that?  char__mo. char__ emo. char__emo. char__s emo.
+c2:	char__real.  char__eal.  char__e]( char__that. char__al.  char__n]( char__l.  char__hat. char__actly. char__t is n
+
