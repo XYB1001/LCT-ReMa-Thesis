@@ -178,3 +178,47 @@ b2:	word__tbh char__tbh word__the char__thing  char__hing  char__ou!! char__you!
 c1:	char__e.. char__you!!  char__ou!!  char__u!!  char__ch! char__that?  char__mo. char__ emo. char__emo. char__s emo.
 c2:	char__real.  char__eal.  char__e]( char__that. char__al.  char__n]( char__l.  char__hat. char__actly. char__t is n
 
+
+All data (except SM 5000) on SM (5000)
+
+LinearSVC
+word uni + char (3,6)
+
+**************************************************
+Results for SVM model:
+--------------------------------------------------
+Accuracy: 0.5686
+--------------------------------------------------
+Precision, recall and F-score per class:
+            Precision     Recall    F-score
+a1           0.571429   0.432432   0.492308
+a2           0.225806   0.162791   0.189189
+b1           0.412229   0.445629   0.428279
+b2           0.441821   0.412598   0.426710
+c1           0.645387   0.664546   0.654827
+c2           0.553432   0.536351   0.544758
+--------------------------------------------------
+Average (macro) F-score: 0.45601169488789506
+--------------------------------------------------
+Confusion matrix:
+Labels: ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']
+[[  16    0    3    2   12    4]
+ [   0    7    3    4   20    9]
+ [   1    4  209   36  148   71]
+ [   1    4   40  262  214  114]
+ [   6    6  166  180 1567  433]
+ [   4   10   86  109  467  782]]
+
+**************************************************
+6 classes
+2767979 features
+------------------------------
+Top 10 predictive features by class:
+a1:	char__acts e char__late e char__cts em char__cts e char__s emo  word__fr char__orrow  char__rrow  char__row  char__ction 
+a2:	char__of* char__yo 1 char__o 1 char__t me e word__feas char__feas char__ cutee char__d is r word__of char__mily*
+b1:	char__y emo❤ char__yo* word__boa word__te char__non.  char__ts!!!  char__ yes h char__sting  char__y wtf  char__boa
+b2:	word__oc char__*of char__u emo❤ char__ ^^ word__bof word__non word__eat word__bea word__yop char__yop
+c1:	char__¦¦  char__||  char__f god  char__//  char__best e char__that?  char__g you' char__s is r char__p me p char__l me e
+c2:	char__on* char__o emo( word__tf char__gh i c char__u you  char__rted. char__t me b char__rsed e char__ey han char__re me 
+
+
