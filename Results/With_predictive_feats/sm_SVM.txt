@@ -128,3 +128,97 @@ b2:	word__tbh char__tbh word__the char__thing  char__hing  char__you!! char__ yo
 c1:	char__u!!  char__you!!  char__ou!!  char__e.. char__nks!!! char__ks!!! char__that?  char__ch! char__here.. char__ere..
 c2:	char__real.  char__eal.  char__e]( char__l.  char__al.  char__d]( char__actly. char__ctly. char__ice. char__t](
 
+
+
+SM on SM
+
+LinearSVC
+word uni + char(3,6) + splitting samples over 180 long + under 30-long removed
+
+
+**************************************************
+Results for SVM model:
+--------------------------------------------------
+Accuracy: 0.5737260876925682
+--------------------------------------------------
+Precision, recall and F-score per class:
+            Precision     Recall    F-score
+a1           0.602740   0.368201   0.457143
+a2           0.253425   0.110448   0.153846
+b1           0.484705   0.465873   0.475103
+b2           0.425092   0.398355   0.411289
+c1           0.644426   0.669845   0.656890
+c2           0.549779   0.555215   0.552484
+--------------------------------------------------
+Average (macro) F-score: 0.45112571411172836
+--------------------------------------------------
+Confusion matrix:
+Labels: ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']
+[[  88    1    6   25   82   37]
+ [   0   37   37   43  142   76]
+ [   2   12 1331  237  840  435]
+ [   6   11  249 1501 1322  679]
+ [  32   50  742 1111 9272 2635]
+ [  18   35  381  614 2730 4716]]
+
+**************************************************
+6 classes
+1710052 features
+------------------------------
+Top 10 predictive features by class:
+a1:	char__late e word__fr char__cts em char__cts e char__acts e char__ate em char__️ love char__i️ l char__️ lo char__️ l
+a2:	char__of* char__yo 1 char__o 1 word__of char__t me e word__why char__why char__ cutee char__ what  char__d is r
+b1:	char__y emo❤ word__boa char__yo* char__ts!!!  char__non.  char__sting  word__or char__u too  char__boa char__l emo 
+b2:	char__hi. word__oc char__u emo❤ char__26. word__eat word__bof char__ why? char__ ^^ word__non char__oh i l
+c1:	char__¦¦  char__||  char__u thou char__? emo  char__ not c char__is!!!  char__ao tha char__e tho? char__best e char__l me e
+c2:	char__on* word__cj char__rted. char__t me b char__d tbh  char__ whats char__y noth char__h !!!! char__o too. char__re me
+
+ 
+
+
+Reddit on Reddit
+
+LinearSVC
+word uni + char(3,6) + splitting samples over 180 long + under 30-long removed
+
+**************************************************
+Results for SVM model:
+--------------------------------------------------
+Accuracy: 0.545314307751639
+--------------------------------------------------
+Precision, recall and F-score per class:
+/home/xiaoyu/anaconda3/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+            Precision     Recall    F-score
+a1           0.000000   0.000000   0.000000
+a2           0.800000   0.181818   0.296296
+b1           0.525862   0.360947   0.428070
+b2           0.539051   0.523810   0.531321
+c1           0.602429   0.651489   0.625999
+c2           0.433219   0.435456   0.434335
+--------------------------------------------------
+Average (macro) F-score: 0.38600352483394224
+--------------------------------------------------
+Confusion matrix:
+Labels: ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']
+[[  0   0   0   5   2   0]
+ [  0   4   2   5   6   5]
+ [  0   0  61  31  53  24]
+ [  0   1   9 352 203 107]
+ [  0   0  30 173 744 195]
+ [  0   0  14  87 227 253]]
+
+**************************************************
+6 classes
+521435 features
+------------------------------
+Top 10 predictive features by class:
+a1:	char__sh a1 char__ish a1 char__h a1 char__ a1 word__a1 char__lish a word__try char__try  char__sh a char__ish a
+a2:	char__y! i char__y! i c char__ey! i char__ey! i  char__hey! i char__y! i  char__ey!  char__hey!  char__y!  char__p you.
+b1:	char__il. char__, t char__h, til char__ til. char__h, ti char__, til. char__til. char__oh, ti char__, ti char__, til
+b2:	char__hi. char__hey! char__ey! char__lte. word__lte char__te. char__lte word__sora char__sora char__ora.
+c1:	char__hi! char__oh. word__oh char__yes. char__es. word__yes char__ hey char__ey hey char__y hey! char__hey he
+c2:	char__no. word__no char__ck! char__uck! char__fuck! char__easy. char__asy. char__sy. word__easy char__easy
+
+
+

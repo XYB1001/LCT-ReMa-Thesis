@@ -1,29 +1,33 @@
 ########### SM CORPUS #####################################
 
-len(data): 119890
-len(labels): 119890
-c2	34882
-c1	56109
-b1	11289
-b2	15363
-a2	1312
-a1	935
-
-Average lengths in number of tokens
-(tokenized using nltk.tokenize method word_tokenize)
+len(data): 118138
+len(labels): 118138
+c2	34396
+c1	55376
+b1	11189
+b2	14953
+a2	1296
+a1	928
 
 Twitter data
-Mean length: 17.696326333664295
+Mean length (char): 81.08655710931917
+St. deviation: 63.471574458214796
+Mean length (words): 17.696326333664295
 St. deviation: 14.066941685739245
+
 Reddit data
-Mean length: 41.69471252990184
-St. deviation: 74.33681998667393
+Mean length (char): 221.54854883810626
+St. deviation: 370.8462576311144
+Mean length (words): 47.89914183781699
+St. deviation: 78.69251372727702
 
 Overall lengths:
-Mean length: 20.122987738760532
-St. deviation: 28.088227194274204
+Mean length (char): 93.41731703600874
+St. deviation: 131.63199601596705
+Mean length (words): 20.347745856540655
+St. deviation: 28.233555075103887
 
-########## EFCAMDAT #########################################
+############# EFCAMDAT ######################################
 
 len(efdat): 28029
 len(ef_labels): 28029
@@ -34,6 +38,8 @@ b2	5650
 c1	3749
 c2	630
 Efcamdat data
-Mean length: 114.58853330479147
+Mean length (char): 559.6158621427807
+St. deviation: 324.3979939469384
+Mean length (words): 114.58853330479147
 St. deviation: 63.27735345787127
 

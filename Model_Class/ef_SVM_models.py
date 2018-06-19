@@ -13,8 +13,8 @@ from collections import Counter
 # from imblearn.over_sampling import RandomOverSampler
 # from imblearn.combine import SMOTEENN
 
-from sklearn.dummy import DummyClassifier
-from sklearn.decomposition import TruncatedSVD, PCA
+# from sklearn.dummy import DummyClassifier
+# from sklearn.decomposition import TruncatedSVD, PCA
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.svm import LinearSVC
 from sklearn.pipeline import Pipeline, FeatureUnion
@@ -43,6 +43,51 @@ def shuffle_prepare_data(data, clean_char=True):
     labels = [ tup[1] for tup in data]
 
     return samples, labels
+
+def split_long_samps(XOld, YOld, len_thresh):
+    '''
+    Takes in original dataset, splits those samples in half which are above a given threshold
+    '''
+    old_data = list(zip(XOld, YOld))
+    print('{} samples originally'.format(len(old_data)))
+
+    long_samples = { tup for tup in old_data if len(tup[0]) > len_thresh}
+    print('{} samples to be split'.format(len(long_samples)))
+    intermediate_data = list(set(old_data) - long_samples)
+    print('{} samples after removing long samples'.format(len(intermediate_data)))
+
+    split_samps = []
+    for tup in long_samples:
+        content = list(tup)
+        # make 2 copies of sample to split. The text of the sample is to be replaced with split text
+        samp1 = copy.deepcopy(content)
+        samp2 = copy.deepcopy(content)
+        # content[0] is the text
+        sents = sent_tokenize(content[0])
+        split_point = int(len(sents)*0.5)
+
+        # In case sent_tokenize does not perform well and len(sents) is 1, don't split and attach an empty string as sample
+        if len(sents[:split_point]) > 0:
+            text1 = ' '.join(sents[:split_point])
+            # substitute text part of samp1 with text1
+            samp1[0] = text1
+            split_samps.append(tuple(samp1)) # change back to tuple for sake of conformity
+        if len(sents[split_point:]) > 0:
+            text2 = ' '.join(sents[split_point:])
+            # substitute text part of samp2 with text2
+            samp2[0] = text2
+            split_samps.append(tuple(samp1))
+
+    # Put split samples into dataset
+    new_data = intermediate_data + split_samps
+    print('{} samples after splitting'.format(len(new_data)))
+
+    # Unzip data
+    XNew = list(list(zip(*new_data))[0])
+    YNew = list(list(zip(*new_data))[1])
+
+    return XNew, YNew
+
 
 def evaluate(Ygold, Yguess):
     '''Evaluating model performance and printing out scores in readable way'''
@@ -76,7 +121,7 @@ if __name__ == '__main__':
 
     print('Fetching and preparing data...')
     # Fetching pickled ef data
-    f = open('../Data/efcamdat-len_norm.pickle', 'rb')
+    f = open('../Data/efcamdat-data.pickle', 'rb')
     data = pickle.load(f)
     f.close()
 
@@ -93,6 +138,9 @@ if __name__ == '__main__':
     Ytrain = Y[:split_point]
     Xtest = X[split_point:]
     Ytest = Y[split_point:]
+
+    # Splitting
+    # Xtrain, Ytrain = split_long_samps(Xtrain, Ytrain, 800)
 
 
     '''
