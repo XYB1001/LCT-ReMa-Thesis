@@ -1,0 +1,43 @@
+Logisitc Regression (default params)
+
+word + char grams (3,6)
+splitting (800)
+
+**************************************************
+Results for Logisctic Regerssion model:
+--------------------------------------------------
+Accuracy: 0.927796803652968
+--------------------------------------------------
+Precision, recall and F-score per class:
+            Precision     Recall    F-score
+a1           0.970450   0.976351   0.973392
+a2           0.939620   0.937077   0.938347
+b1           0.902975   0.916010   0.909446
+b2           0.898868   0.926385   0.912419
+c1           0.917794   0.890010   0.903689
+c2           0.991935   0.754601   0.857143
+--------------------------------------------------
+Average (macro) F-score: 0.9157392454513114
+--------------------------------------------------
+Confusion matrix:
+Labels: ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']
+[[1445   17    5   10    3    0]
+ [  28 1385   39   12   13    1]
+ [   9   37 1396   63   19    0]
+ [   4   16   57 1271   24    0]
+ [   1   18   46   44  882    0]
+ [   2    1    3   14   20  123]]
+
+**************************************************
+
+6 classes
+1112272 features
+------------------------------
+Top 10 predictive features by class:
+a1:     word__hi char__'m  char__ hi char__eat char__ bu char__lay  char__ sp char__i'm char__play  char__ play
+a2:     char__est char__ cu char__isa char__ mo char__ se char__wed char__xx@ char__xxx@ char__ da char__xxx
+b1:     char__tim word__tim char__song char__ son char__re i  char__ song char__y o char__i t char__ blog char__blog
+b2:     char__tic word__law char__ead char__ pay char__ende char__ law  char__. i a char__ham char__law  char__pay
+c1:     char__rime char__ cri char__ crim char__ crime char__crime char__ress char__sch char__eem char__ene char__rim
+c2:     char__obo char__obot char__robot char__robo char__ robot char__ robo char__rit char__bot char__ rob char__lin
+

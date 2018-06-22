@@ -1,0 +1,134 @@
+Logisitc Regression (default params)
+
+TRAIN: Everything, TEST: Everything
+
+word + char grams (3,6)
+splitting (800)
+
+**************************************************
+Results for Logisctic Regerssion model:
+--------------------------------------------------
+Accuracy: 0.6712823600240819
+--------------------------------------------------
+Precision, recall and F-score per class:
+            Precision     Recall    F-score
+a1           0.957270   0.869641   0.911354
+a2           0.917864   0.722132   0.808318
+b1           0.732973   0.561738   0.636032
+b2           0.650394   0.508650   0.570855
+c1           0.647358   0.790332   0.711736
+c2           0.609978   0.567444   0.587943
+--------------------------------------------------
+Average (macro) F-score: 0.7043729494282203
+--------------------------------------------------
+Confusion matrix:
+Labels: ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']
+[[ 1501    11    21    25   110    58]
+ [   34  1341    90    47   243   102]
+ [   11    49  2443   232  1198   416]
+ [    6    18   191  2558  1643   613]
+ [   10    28   384   703 11723  1985]
+ [    6    14   204   368  3192  4964]]
+
+**************************************************
+
+6 classes
+2392047 features
+------------------------------
+Top 10 predictive features by class:
+a1:     word__fr word__hi char__ mf word__emo char__ hoe char__ hi char__hoe char__ asf char__asf char__ fr
+a2:     word__sonic char__sonic word__real word__bac char__.i  char__t do t char__soni char__24k char__of* char__he bac
+b1:     word__ugh char__ ?? char__ !! char__wig char__o emo  char__ wig word__wig char__nct char__kld char__oui
+b2:     char__ ^^ char__ —  char__*-* char__ *- char__ *-* word__bea char__ugu char__ ugu char__ .. char__ |
+c1:     char__¦¦  char__||  char__//  char__...  char__ :' char__.... word__lrt word__hux char__bts char__ :p
+c2:     char__ ❤  char__... char__esc char__rt)  char__ xx char__(rt)  char__(rt char__(rt) word__haha char__e ❤
+
+
+
+TRAIN: Efacamdat + Twitter, TEST: Reddit
+
+word + char grams (3,6)
+splitting (800)
+
+**************************************************
+Results for LogReg model:
+--------------------------------------------------
+Accuracy: 0.3647671391379809
+--------------------------------------------------
+Precision, recall and F-score per class:
+            Precision     Recall    F-score
+a1           0.000000   0.000000   0.000000
+a2           0.000000   0.000000   0.000000
+b1           0.152905   0.078247   0.103520
+b2           0.258824   0.084323   0.127204
+c1           0.440614   0.568722   0.496538
+c2           0.282549   0.375858   0.322592
+--------------------------------------------------
+Average (macro) F-score: 0.17497572453349444
+--------------------------------------------------
+Confusion matrix:
+Labels: ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']
+[[   0    0    1    0    9   10]
+ [   0    0    2   21   44   19]
+ [   6    1   50   64  324  194]
+ [   8    6   81  220 1605  689]
+ [   5    6  118  377 2582 1452]
+ [   1    6   75  168 1296  931]]
+
+**************************************************
+6 classes
+2564419 features
+------------------------------
+Top 10 predictive features by class:
+a1:     word__fr char__ mf char__ hoe word__emo word__hi char__ hi char__hoe char__i️  char__ fr char__ asf
+a2:     word__sonic char__o 1 char__of* char__sonic char__yo 1 word__feas char__feas char__soni word__real word__bac
+b1:     char__ ?? word__ugh word__wig char__wig char__ wig word__ten char__ !! char__kld char__oui char__ js
+b2:     char__ ^^ char__ —  char__*-* char__ *- char__ *-* char__ |  word__xd char__ xd char__ .. char__ugu
+c1:     char__||  char__¦¦  char__//  char__...  char__.... char__ :' char__bts word__hux char__iked a char__mfc
+c2:     char__ ❤  char__... char__esc char__rt)  word__rt char__rt) char__t)  char__(rt char__(rt)  char__(rt)
+
+
+
+TRAIN: Efacamdat + Reddit, TEST: Twitter
+
+word + char grams (3,6)
+splitting (800)
+
+**************************************************
+Results for LogReg model:
+--------------------------------------------------
+Accuracy: 0.36324663394174467
+--------------------------------------------------
+Precision, recall and F-score per class:
+            Precision     Recall    F-score
+a1           0.012285   0.005507   0.007605
+a2           0.007117   0.001653   0.002683
+b1           0.112934   0.016967   0.029501
+b2           0.118979   0.223509   0.155292
+c1           0.464874   0.627410   0.534049
+c2           0.314421   0.134904   0.188802
+--------------------------------------------------
+Average (macro) F-score: 0.15298859570254128
+--------------------------------------------------
+Confusion matrix:
+Labels: ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']
+[[    5     1     1   233   613    55]
+ [    7     2     7   268   766   160]
+ [   54    26   179  2219  6798  1274]
+ [   67    42   189  2759  7805  1482]
+ [  173   124   669 11557 31895  6418]
+ [  101    86   540  6153 20733  4306]]
+
+**************************************************
+6 classes
+1642220 features
+------------------------------
+Top 10 predictive features by class:
+a1:     word__hi char__ hi char__.i  char__ i  char__'m  char__ sh char__e.  char__ .  char__go  char__y.
+a2:     char__.i  char__e.  char__ i  char__n.  char__s bo char__t.  char__.th char__ mo char__ien  char__ent
+b1:     word__tim char__gar char__yes,  char__yes, char__i w char__r.  word__hi char__s.. char__e not  char__ tim
+b2:     char__’s  char__n’t char__n’t  char__’t  char__e i  char__yust  char__yust word__yust char__yus word__yes
+c1:     char__lol char__ &  char__y to g word__lol char__l i  char__tai char__sch char__w s char__it! word__oh
+c2:     char__ ps char__run char__ted  char__d then char__amn char__, and  char__e to t char__tres word__sb char__cel
+
+
