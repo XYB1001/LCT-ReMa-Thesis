@@ -1,0 +1,34 @@
+TO DO
+
+- Create new result sheet, excluding 'useless' results from old one
+- Run currently best ones with each classifier with word BI-grams!
+- Once above is done, see if removing some 'intentional' abbreviations is useful.
+(Who knows, this  might not be useful...)
+
+
+
+IDEA: Formulate task as a ranking task?
+Given a pair of samples, can you correctly identify which one is higher ranked?
+
+Method: need to find a heuristic of feeding in the representations of 2 samples simultaneously. (Recall neural architectures:
+there, we could have things like Siamese network etc. And generally, with DENSE vector representations, you could just concat
+the two vectors, or take their average or max ...).
+
+Eval: just accuracy. How many pairs received the correct label.
+Label being 0 or 1: 0 = first sample is higher. 1 = second sample is higher.
+
+
+If we do it accross all data:
+Probably way too many samples, imagine all the possible pairs you can make out of thousands of samples!
+With n samples, you get (n-1)! pairs! (right?...)
+
+So, instead, take a random selection of pairs fullfilling the following
+
+Can have 3 settings:
+- compare samples with distance of 5 between them
+- compare samples with distance of 3 between them
+- compare samples with distance of 1 between them, i.e. where labels are just next to each other.
+
+Obviously: hypothesis is that in conditions with larger distance, accuracy will be higher.
+But: is this indeed the case? Especially: also in the SM data?
+
