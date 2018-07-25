@@ -6,37 +6,37 @@ splitting (400)
 **************************************************
 Results for LogReg model:
 --------------------------------------------------
-Accuracy: 0.6283054003724394
+Accuracy: 0.6173015066869816
 --------------------------------------------------
 Precision, recall and F-score per class:
             Precision     Recall    F-score
-a1           0.900000   0.379747   0.534125
-a2           0.488889   0.068966   0.120879
-b1           0.653720   0.426329   0.516087
-b2           0.601500   0.346009   0.439308
-c1           0.643533   0.784493   0.707056
-c2           0.596927   0.591654   0.594279
+a1           0.898734   0.321267   0.473333
+a2           0.460000   0.074919   0.128852
+b1           0.628921   0.418761   0.502762
+b2           0.543250   0.397405   0.459021
+c1           0.647863   0.751176   0.695705
+c2           0.580520   0.590867   0.585647
 --------------------------------------------------
-Average (macro) F-score: 0.4852891049907368
+Average (macro) F-score: 0.4742201347647319
 --------------------------------------------------
 Confusion matrix:
 Labels: ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']
-[[   90     0     3     3    87    54]
- [    0    22    21    22   191    63]
- [    0     3  1195   112  1094   399]
- [    1     4   135  1283  1580   705]
- [    6     9   285   472 10877  2216]
- [    3     7   189   241  3073  5090]]
+[[   71     0     2    10    85    53]
+ [    0    23    18    21   170    75]
+ [    0     4  1183   157  1009   472]
+ [    2     3   106  1501  1469   696]
+ [    5    11   358   696 10382  2369]
+ [    1     9   214   378  2910  5072]]
 
 **************************************************
 6 classes
-1819882 features
+1831165 features
 ------------------------------
 Top 10 predictive features by class:
-a1:	word__fr char__facts word__emo char__ fr char__acts char__ rn char__ mf char__cts char__ hoe char__i️ lov
-a2:	char__o 1 char__yo 1 word__sonic char__sonic char__soni char__king r word__forces char__forces char__orces char__it me 
-b1:	word__ugh char__o emo  char__ !! char__wig char__ ?? char__ wig char__oui word__wig char__ !!! char__igi
-b2:	char__ —  char__ ^^ char__*-* char__ *- char__ *-* char__ xd char__ |  char__ugu word__xd char__. emo 
-c1:	char__||  char__¦¦  char__//  char__...  char__.... word__dan char__bts word__hux char__e." char__iked a
-c2:	char__ ❤  char__... char__esc word__rt char__rt)  char__(rt char__(rt)  char__rt) char__(rt) word__haha
+a1:	char__ hoe | char__hoe | char__e e | word__fr | char__i️  | char__ mf | char__ boo  | char__ e♂ | char__ e♂️ | char__e♂️
+a2:	word__feas | char__feas | char__24k | char__sonic | word__sonic | word__bac | char__fea | char__した。 | char__soni | char__he cut
+b1:	word__ugh | char__ ?? | char__wig | char__ wig | word__wig | char__ !! | char__igi | char__oui | char__i'm | char__nct 
+b2:	char__ —  | char__ ^^ | char__*-* | char__ *- | char__ *-* | char__ .. | char__ugu | word__xd | word__non | char__ x"
+c1:	char__¦¦  | char__||  | char__//  | char__...  | char__iked a | word__lrt | word__dan | char__.... | char__ what. | char__ :'
+c2:	char__ ❤  | char__... | char__! e | char__❤ e | char__ ❤ e | char__ e❤ | char__esc | char__rt)  | word__rt | char__(rt
 

@@ -1,44 +1,40 @@
-EFCAM ON SM
-
-LinearSVC
-word uni + char(3,6)
-
 **************************************************
 Results for SVM model:
 --------------------------------------------------
-Accuracy: 0.3792
+Accuracy: 0.116
 --------------------------------------------------
 Precision, recall and F-score per class:
             Precision     Recall    F-score
-a1           0.012685   0.181818   0.023715
-a2           0.000000   0.000000   0.000000
-b1           0.075697   0.040426   0.052705
-b2           0.103704   0.023490   0.038304
-c1           0.478445   0.756904   0.586291
-c2           0.369231   0.032787   0.060226
+a1           0.010984   0.550000   0.021537
+a2           0.012640   0.176471   0.023591
+b1           0.085106   0.115702   0.098074
+b2           0.123360   0.141566   0.131837
+c1           0.471867   0.157625   0.236311
+c2           0.361446   0.021127   0.039920
 --------------------------------------------------
-Average (macro) F-score: 0.12687337452092814
+Average (macro) F-score: 0.09187838407698397
 --------------------------------------------------
 Confusion matrix:
 Labels: ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']
-[[   6    2    1    0   23    1]
- [   5    0    1    0   39    2]
- [  43   23   19    5  372    8]
- [  52   25   34   14  460   11]
- [ 213  107  128   73 1809   60]
- [ 154   73   68   43 1078   48]]
+[[ 22   6   2   3   7   0]
+ [ 27   9   4   3   7   1]
+ [225  74  56  56  66   7]
+ [292  95  90  94  86   7]
+ [946 308 316 364 369  38]
+ [491 220 190 242 247  30]]
 
 **************************************************
 6 classes
-1438162 features
+1285177 features
 ------------------------------
 Top 10 predictive features by class:
-a1:	word__hi char__'m  char__ hi char__i'm char__ in my char__i'm  char__i a char__go  char__ sh char__y. 
-a2:	char__ien  char__ than char__ thank char__ rie char__r rien char__rien  word__rien char__ rien  char__r rie char__leter 
-b1:	char__ u  char__t a te char__ u c char__ u ca char__ u can char__et a t char__ a mom char__a mom char__t an e char__a mome
-b2:	char__ortly  char__rtly  char__adam,  char__dam,  char__tly  char__am,  char__m,  char__ly  char__ary i char__s. 
-c1:	char__bye. char__ye. word__bye char__bye char__n my w char__tly char__es. char__my wor char__my wo char__ my wo
-c2:	char__obot char__robo char__robot char__ robo char__ robot char__obo char__rit char__n i char__t n char__ rob
+a1:	char__'m  word__hi char__i'm word__buy char__ hi char__i'm  char__. be char__i a char__go  char__eat
+a2:	char__ien  char__s bo char__est char__ rie char__dog char__rien  char__leter char__leter  char__ lete char__ leter
+b1:	char__t a te char__ u  char__t an e char__ u can char__ u ca char__ u c char__et a t char__t an  char__ot an  char__not an
+b2:	char__ary i word__law char__ary is char__ law  char__law  char__. i a char__t's c char__ect? char__ect?  char__ende
+c1:	char__paula char__aula char__ paula word__paula char__ite it char__ite i char__tyl char__rite i char__paul char__ paul
+c2:	char__obo char__obot char__robo char__robot char__ robot char__ robo char__n i char__rit char__rela char__ rob
+
 
 
 

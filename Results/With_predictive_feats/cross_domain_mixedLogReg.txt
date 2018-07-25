@@ -8,40 +8,80 @@ splitting (800)
 **************************************************
 Results for Logisctic Regerssion model:
 --------------------------------------------------
-Accuracy: 0.6712823600240819
+Accuracy: 0.6728422089650266
 --------------------------------------------------
 Precision, recall and F-score per class:
             Precision     Recall    F-score
-a1           0.957270   0.869641   0.911354
-a2           0.917864   0.722132   0.808318
-b1           0.732973   0.561738   0.636032
-b2           0.650394   0.508650   0.570855
-c1           0.647358   0.790332   0.711736
-c2           0.609978   0.567444   0.587943
+a1           0.965651   0.859781   0.909646
+a2           0.914420   0.738303   0.816978
+b1           0.747528   0.560863   0.640880
+b2           0.655572   0.508110   0.572498
+c1           0.641772   0.797052   0.711033
+c2           0.620876   0.563607   0.590857
 --------------------------------------------------
-Average (macro) F-score: 0.7043729494282203
+Average (macro) F-score: 0.7069820037964466
 --------------------------------------------------
 Confusion matrix:
 Labels: ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']
-[[ 1501    11    21    25   110    58]
- [   34  1341    90    47   243   102]
- [   11    49  2443   232  1198   416]
- [    6    18   191  2558  1643   613]
- [   10    28   384   703 11723  1985]
- [    6    14   204   368  3192  4964]]
+[[ 1490    20    20    22   130    51]
+ [   24  1357    73    57   233    94]
+ [   12    40  2419   203  1271   368]
+ [    7    28   174  2600  1709   599]
+ [    6    32   350   715 11790  1899]
+ [    4     7   200   369  3238  4931]]
 
 **************************************************
 
 6 classes
-2392047 features
+2409141 features
 ------------------------------
 Top 10 predictive features by class:
-a1:     word__fr word__hi char__ mf word__emo char__ hoe char__ hi char__hoe char__ asf char__asf char__ fr
-a2:     word__sonic char__sonic word__real word__bac char__.i  char__t do t char__soni char__24k char__of* char__he bac
-b1:     word__ugh char__ ?? char__ !! char__wig char__o emo  char__ wig word__wig char__nct char__kld char__oui
-b2:     char__ ^^ char__ —  char__*-* char__ *- char__ *-* word__bea char__ugu char__ ugu char__ .. char__ |
-c1:     char__¦¦  char__||  char__//  char__...  char__ :' char__.... word__lrt word__hux char__bts char__ :p
-c2:     char__ ❤  char__... char__esc char__rt)  char__ xx char__(rt)  char__(rt char__(rt) word__haha char__e ❤
+a1:     char__ hoe word__hi char__hoe word__fr char__ hi char__e e char__ e♂️ char__e♂️ char__ e♂ char__ mf
+a2:     word__feas char__yo 1 char__feas word__sonic char__o 1 char__sonic char__t do t word__bac char__soni char__24k
+b1:     char__ ?? word__ugh word__wig char__wig char__ wig char__kld char__ !! char__oui char__ !!! char__nct
+b2:     char__ —  char__ ^^ char__*-* char__ *- char__ *-* char__ x" char__ .. char__ |  char__. e e word__bea
+c1:     char__||  char__¦¦  char__...  char__//  char__.... char__ :' char__bts word__hux char__mfc char__ hux
+c2:     char__ ❤  char__... char__! e char__esc char__❤ e char__ e❤ char__ ❤ e char__rt)  char__?!  word__haha
+
+
+TRAIN: Efcamdat TEST: SM (5000)
+
+**************************************************
+Results for LogReg model:
+--------------------------------------------------
+Accuracy: 0.1206
+--------------------------------------------------
+Precision, recall and F-score per class:
+            Precision     Recall    F-score
+a1           0.010040   0.500000   0.019685
+a2           0.013255   0.176471   0.024658
+b1           0.091248   0.101240   0.095984
+b2           0.124444   0.168675   0.143223
+c1           0.476553   0.160615   0.240256
+c2           0.359223   0.026056   0.048588
+--------------------------------------------------
+Average (macro) F-score: 0.0953988854491658
+--------------------------------------------------
+Confusion matrix:
+Labels: ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']
+[[ 20   4   2   6   7   1]
+ [ 26   9   4   3   8   1]
+ [233  67  49  71  59   5]
+ [284  97  83 112  77  11]
+ [942 300 246 429 376  48]
+ [487 202 153 279 262  37]]
+
+**************************************************
+6 classes
+1285177 features
+------------------------------
+Top 10 predictive features by class:
+a1:	word__hi char__'m  char__ hi word__buy char__i'm char__eat char__. be char__ sh char__liv char__i'm 
+a2:	char__est char__s bo char__dog char__ dog char__ mo char__isa char__m a char__ wear char__ve t char__wear
+b1:	char__tim word__tim char__r.  char__ blog char__blog word__blog char__song char__ tv char__it  char__y o
+b2:	word__law char__ law  char__law  char__ende char__ham char__law char__ pay char__tic char__ary i char__liti
+c1:	char__paula char__aula char__ paula word__paula char__rime char__ paul char__paul char__ cri char__ pau char__pau
+c2:	char__obo char__obot char__robot char__robo char__ robot char__ robo char__rit char__ rob char__tres char__ stres
 
 
 

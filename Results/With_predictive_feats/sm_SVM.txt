@@ -6,39 +6,40 @@ word uni + char(3,6)
 **************************************************
 Results for SVM model:
 --------------------------------------------------
-Accuracy: 0.5628398892336436
+Accuracy: 0.5670560352124598
 --------------------------------------------------
 Precision, recall and F-score per class:
             Precision     Recall    F-score
-a1           0.609756   0.330396   0.428571
-a2           0.212291   0.110787   0.145594
-b1           0.451683   0.445237   0.448437
-b2           0.412958   0.375994   0.393610
-c1           0.635205   0.666619   0.650533
-c2           0.542973   0.540587   0.541778
+a1           0.561983   0.307692   0.397661
+a2           0.187500   0.107492   0.136646
+b1           0.472019   0.432920   0.451625
+b2           0.422248   0.388933   0.404906
+c1           0.636633   0.669706   0.652750
+c2           0.544559   0.547414   0.545983
 --------------------------------------------------
-Average (macro) F-score: 0.43475380187613094
+Average (macro) F-score: 0.43159515356257416
 --------------------------------------------------
 Confusion matrix:
 Labels: ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']
-[[  75    1   11   26   71   43]
- [   0   38   25   46  158   76]
- [   5   15 1248  208  899  428]
- [   1   30  287 1466 1356  759]
- [  31   55  782 1188 9368 2629]
- [  11   40  410  616 2896 4675]]
+[[  68    1   11   11   78   52]
+ [   2   33   24   35  149   64]
+ [   3   21 1223  258  889  431]
+ [   5   22  235 1469 1357  689]
+ [  26   55  708 1082 9256 2694]
+ [  17   44  390  624 2810 4699]]
 
 **************************************************
 6 classes
-1899790 features
+1714105 features
 ------------------------------
 Top 10 predictive features by class:
-a1:	char__orrow  char__rrow  char__row  char__late < word__fr char__unny < char__i️  char__ hoe char__i️ l char__️ lov
-a2:	char__of* char__yo 1 char__o 1 word__of char__t me < word__feas char__feas char__tried  char__ good. char__good.
-b1:	char__u too  word__boa char__sting  char__u so f char__why? char__hy? char__y wtf  char__ mood  char__ying < char__bon.
-b2:	word__oc word__yo char__ what? word__non char__ the p word__bof char__yop char__ch why word__yop char__and*
-c1:	char__¦¦  char__||  char__f god  char__u too! char__best < char__ough  char__that?  char__yy tha char__ao tha char__ what.
-c2:	word__tf char__gh i c char__l so b char__orst o char__lcome. char__yo. char__o too. char__at tod char__ding l char__! ❤
+a1:	char__late e | char__acts e | char__cts e | char__orrow  | char__rrow  | char__ous e  | char__ts e | char__us e e | char__row  | char__us e 
+a2:	char__why | word__feas | word__why | char__feas | char__ cutee | char__fea | char__amily* | char__mily* | char__ily* | char__he cut
+b1:	char__yo  | word__te | char__sting  | char__u!!!!! | char__non.  | char__t is g | char__ts!!!  | char__od e e | char__f you  | char__u too 
+b2:	word__oc | char__hi. | char__*of | char__12. | word__eat | word__bof | char__t is e | word__non | char__yop | word__yop
+c1:	char__¦¦  | char__||  | char__ for n | char__f god  | char__e tho? | char__s is r | char__e you. | char__"i  | char__’s tha | char__ach e 
+c2:	char__l so b | word__cj | char__u you  | char__ht e e | char__orst o | char__ter e  | word__tf | word__hat | char__ one e | char__'s tha
+
 
 
 Twitter on Twitter
