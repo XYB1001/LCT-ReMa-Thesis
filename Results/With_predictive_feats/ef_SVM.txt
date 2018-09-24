@@ -1,5 +1,59 @@
 EFCAM ON EFCAM
 
+**************************************************
+Results for SVM model:
+--------------------------------------------------
+Accuracy: 0.9228025114155252
+--------------------------------------------------
+Precision, recall and F-score per class:
+            Precision     Recall    F-score
+a1           0.953458   0.978766   0.965946
+a2           0.931635   0.926049   0.928834
+b1           0.890244   0.922207   0.905944
+b2           0.908178   0.915401   0.911775
+c1           0.928651   0.871339   0.899083
+c2           0.966667   0.738854   0.837545
+--------------------------------------------------
+Average (macro) F-score: 0.908187844269369
+--------------------------------------------------
+Confusion matrix:
+Labels: ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']
+[[1475   17    9    5    1    0]
+ [  40 1390   41   21    9    0]
+ [  20   42 1387   37   18    0]
+ [   4   24   62 1266   25    2]
+ [   4   16   53   48  833    2]
+ [   4    3    6   17   11  116]]
+
+**************************************************
+
+6 classes
+1251990 features
+------------------------------
+Top 10 predictive features by class:
+a1:	char__'m  | char__i'm | char__i'm  | word__hi | char__. be | char__ sh | char__i a | char__int | char__ hi | char__d ev
+a2:	char__ rie | char__leter  | char__eter r | char__ rien  | char__ rien | char__er rie | word__rien | char__r rie | char__ leter | word__leter
+b1:	char__ u  | char__t a te | char__ u c | char__ u can | char__ u ca | char__et a t | char__ a mom | char__a mom | char__t a t | char__tim
+b2:	char__rtl | char__hortl | char__hortly | word__shortly | char__ortly | char__shortl | char__rtly | char__ortl | char__ortly  | char__rtly 
+c1:	char__tyl | char__ortyl  | char__shorty | char__hortyl | word__shortyl | char__tyl  | char__horty | char__ortyl | char__yl  | char__rtyl
+c2:	char__ robot | char__ robo | char__robot | char__robo | char__obo | char__obot | char__tres | char__tress | char__rit | char__ stres
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 LinearSVC
 word uni + char(3,6)
 
